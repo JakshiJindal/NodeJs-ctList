@@ -17,7 +17,7 @@
                   <%= i.name %>
                   <%= i.phone %>
                   <div class="delete-button">
-                    <a href="/delete-contact/?id=<%= i._id %>">
+                    <a href="/contacts/delete-contact/?id=<%= i._id %>">
                         <i class="fas fa-window-close"></i>
                     </a>
                 </div>
@@ -26,7 +26,7 @@
               <% } %>
         </ul>
         </div>
-        <form action="/add-contact" method="POST">
+        <form action="/contacts/add-contact" method="POST">
             <input type="text" name="name" placeholder="enter name">
             <input type="number" name="phone" placeholder="enter phone">
             
